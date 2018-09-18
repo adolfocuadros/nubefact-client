@@ -1,0 +1,16 @@
+{
+  "name": "adolfocuadros/nubefact-client",
+  "description": "Cliente para el Consumo de la API de Nubefact",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adolfo Cuadros",
+      "email": "ronnie.adolfo@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": { "Adolfocuadros\\NubefactClient\\": "src/" }
+  }
+}
