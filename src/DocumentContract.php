@@ -3,6 +3,7 @@ namespace Adolfocuadros\NubefactClient;
 
 abstract class DocumentContract
 {
+
     //Tipos de Comprobante
     public static $FACTURA = 1;
     public static $BOLETA = 2;
@@ -69,14 +70,4 @@ abstract class DocumentContract
      * @return mixed
      */
     abstract public function getArray();
-
-    /**
-     * Retorna el Tipo de Documento
-     * 1 = FACTURA
-     * 2 = BOLETA
-     * 3 = NOTA DE CRÉDITO
-     * 4 = NOTA DE DÉBITO
-     * @return mixed
-     */
-    abstract public function getType();
 }

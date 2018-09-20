@@ -3,15 +3,15 @@ include_once '../vendor/autoload.php';
 
 use Adolfocuadros\NubefactClient\FacturaElectronica;
 
-$ruta = 'https://www.nubefact.com/api/v1/c1d12dbd-4455-46bb-854a-649b5095a238';
-$token = '18a617b970f34d12ab2727381e4f6196872c17746f024fd8b359a63f8f7b925c';
+$ruta = 'https://demo.nubefact.com/api/v1/03989d1a-6c8c-4b71-b1cd-7d37001deaa0';
+$token = 'd0a80b88cde446d092025465bdb4673e103a0d881ca6479ebbab10664dbc5677';
 
 $nubefact = new \Adolfocuadros\NubefactClient\Nubefact($ruta, $token);
 
 $factura = new FacturaElectronica();
 $factura->setPorcentajeIGV(18);
 $factura->setSerie('F001');
-$factura->setNumero(7);
+$factura->setNumero(80);
 $factura->setTotal(100);
 $factura->setTotalIGV(18);
 $factura->setTotalGravada(100);
